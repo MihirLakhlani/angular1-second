@@ -1,21 +1,13 @@
-<h1>
-  Mihir Lakhlani 
-</h1>
-<br>
-<br>
-<a routerLink="" routerLinkActive="active"> home </a>
-<br>
-<a routerLink="user" routerLinkActive="active">user</a>
-<br>
-<a routerLink="header" routerLinkActive="active">header</a>
-<br>
-<br>
-<a routerLink="user/20" routerLinkActive="active">Mihir</a>
-<br>
-<a routerLink="user/30" routerLinkActive="active">Dhyey</a>
-<br>
-<a routerLink="user/40" routerLinkActive="active">Khush</a>
+<h1>Mihir Lakhlani</h1>
+  <form [formGroup]="loginform" (click)="loginuser()" >
+    <input type="text" placeholder="Enter a username" name="user" formControlName="user"/>
+    <br><br>
+    <input type="password" placeholder="Enter a password" name="password" formControlName="password"/>
+    <br>
+    <br>
+    <button>Login</button>
+    
 
+  </form>
 
-<router-outlet></router-outlet>
-
+  

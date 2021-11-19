@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {FormControl,FormGroup} from '@angular/forms'
 
 @Component({
   selector: 'app-root',
@@ -7,5 +8,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'second';
-  data = 10;
+  loginform = new FormGroup({
+    user: new FormControl(''),
+    password: new FormControl('')
+
+  })
+
+  loginuser()
+  {
+    console.log(this.loginform.value);
+    
+  }
 }
